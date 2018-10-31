@@ -1,12 +1,45 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/jinri/jinri",
+    "pages/lastcrazy/lastcrazy",
+    "pages/cart/cart",
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarBackgroundColor": "#ff6700",
+    "navigationBarTitleText": "迎泽微商城",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "red",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/jinri/jinri",
+        "text": "商城",
+        "iconPath": "images/jinri.png",
+        "selectedIconPath": "images/sjinri.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/shopcart.png",
+        "selectedIconPath": "images/sshopcart.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/smine.png"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
